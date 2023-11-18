@@ -1,0 +1,89 @@
+:root{
+    --project-blue:#95E1D3;
+    --checked:#F38181;
+    --project-black:#333333;
+    --text:#B6B6B6;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight:400;
+    font-size:14px;
+    color:var(--project-black);
+}
+a{
+    text-decoration:none;
+    color:var(--project-blue);
+}
+ul{
+    list-style-type: none;
+}
+.logo{
+    font-size:30px;
+    font-weight:700;
+}
+.nav-list-link:hover{
+    color:var(--checked);
+    text-decoration: underline;
+}
+.sec-italic-title{
+    font-family:'Kaushan Script', serif;
+    font-size:24px;
+    font-weight:400;
+    text-align: center;
+}
+.sec-title{
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.sect-services-list-title{
+    text-transform: uppercase;
+    font-weight:400;
+}
+.sect-services-list-text{
+    font-size:15px;
+    font-family: 'Roboto', sans-serif;
+    color:var(--text);
+    line-height:1.46;
+}
+.sect-team-list-title{
+    text-transform: uppercase;
+    font-weight:400;
+    text-align: center;
+}
+.sect-team-text{
+    color:var(--text);
+    font-size:15px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+.sect-team-list-text{
+    color:var(--text);
+    font-family:'Roboto', sans-serif;
+    font-weight:300;
+    font-style:italic;
+    font-size: 15px;
+    text-align: center;
+}
+.footer-link{
+    color:var(--checked);
+}
+.footer-input-email{
+    width:230px;
+    height:39px;
+    color:var(--text);
+    font-weight: 300;
+    font-style:italic;
+    border: 1px solid var(--text);
+}
+.button{
+    background-color: var(--project-blue);
+    width:150px;
+    height:40px;
+    color:white;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    border:none;
+}
