@@ -17,9 +17,30 @@ a{
 ul{
     list-style-type: none;
 }
+ul, p, h2, h4,h5, input, button, img{
+    padding:0;
+    margin:0;
+}
+.container{
+    width:1230px;
+    padding:0 15px;
+    margin: 0 auto 68px;
+    outline:4px solid blue;
+}
+.header .container{
+    margin: 10px auto 68px;
+}
+.footer .container{
+    margin: 0 auto 10px;
+}
 .logo{
     font-size:30px;
     font-weight:700;
+    margin:0 0 12px;
+}
+.nav-list-link{
+    display:inline-block;
+    margin: 13px 0;
 }
 .nav-list-link:hover{
     color:var(--checked);
@@ -30,11 +51,13 @@ ul{
     font-size:24px;
     font-weight:400;
     text-align: center;
+    margin:0 auto 20px;
 }
 .sec-title{
     font-size: 30px;
     text-transform: uppercase;
     text-align: center;
+    padding: 0 auto 40px;
 }
 .sect-services-list-title{
     text-transform: uppercase;
