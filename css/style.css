@@ -24,28 +24,32 @@ ul, p, h2, h4,h5, input, button, img{
 .container{
     width:1230px;
     padding:0 15px;
-    margin: 10px auto;
+    margin: 0 auto;
     outline:4px solid blue;
 }
-.header .container{
-    margin: 10px auto 0;
-    padding: 0 0 12px;
-}
-.footer .container{
-    margin: 0 auto 10px;
+.header{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    padding:17px 0 68px;
 }
 .logo{
     font-size:30px;
     font-weight:700;
-    margin:0 0 12px;
 }
-.nav-list-link{
-    display:inline-block;
-    margin: 13px 0;
+.nav-list{
+    display:flex;
+    flex-direction:row;
+    gap:55px;
+    align-items:center;
 }
 .nav-list-link:hover{
     color:var(--checked);
     text-decoration: underline;
+}
+.sect-services{
+    padding:68px auto 0;
 }
 .sec-italic-title{
     font-family:'Kaushan Script', serif;
@@ -58,7 +62,20 @@ ul, p, h2, h4,h5, input, button, img{
     font-size: 30px;
     text-transform: uppercase;
     text-align: center;
-    padding: 0 auto 40px;
+}
+.sect-services .sec-title{
+    margin: 0 auto 112px;
+}
+.sect-services-list{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    row-gap:100px;
+    column-gap:70px;
+    justify-content:space-between;
+}
+.sect-services-list-item{
+    width:270px;
 }
 .sect-services-list-title{
     text-transform: uppercase;
@@ -70,16 +87,33 @@ ul, p, h2, h4,h5, input, button, img{
     color:var(--text);
     line-height:1.46;
 }
+.sect-team{
+    padding:68px 0 0;
+}
+.sect-team .sec-title{
+    margin:0 auto 85px;
+}
+.sect-team-list{
+    display:flex;
+    flex-direction:row;
+    gap:30px;
+
+}
+.sect-team-list-item{
+    width:380px;
+}
 .sect-team-list-title{
     text-transform: uppercase;
     font-weight:400;
     text-align: center;
+    margin:30px auto 11px; 
 }
 .sect-team-text{
     color:var(--text);
     font-size:15px;
     font-family: 'Roboto', sans-serif;
     text-align: center;
+    margin:0 48px 68px;
 }
 .sect-team-list-text{
     color:var(--text);
@@ -88,6 +122,13 @@ ul, p, h2, h4,h5, input, button, img{
     font-style:italic;
     font-size: 15px;
     text-align: center;
+}
+.footer{
+    padding:68px 0 0;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
 }
 .footer-link{
     color:var(--checked);
