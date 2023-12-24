@@ -24,11 +24,12 @@ ul, p, h2, h4,h5, input, button, img{
 .container{
     width:1230px;
     padding:0 15px;
-    margin: 0 auto 68px;
+    margin: 10px auto;
     outline:4px solid blue;
 }
 .header .container{
-    margin: 10px auto 68px;
+    margin: 10px auto 0;
+    padding: 0 0 12px;
 }
 .footer .container{
     margin: 0 auto 10px;
