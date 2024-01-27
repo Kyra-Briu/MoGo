@@ -44,9 +44,22 @@ ul, p, h2, h4,h5, input, button, img{
     gap:55px;
     align-items:center;
 }
+.nav-list-link{
+    position:relative;
+}
+.nav-list-link:hover::after{
+    content:'';
+    background-color:var(--checked);
+    display:block;
+    margin:0 auto 0;
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
 .nav-list-link:hover{
     color:var(--checked);
-    text-decoration: underline;
 }
 .sect-services{
     padding:68px auto 0;
@@ -63,8 +76,16 @@ ul, p, h2, h4,h5, input, button, img{
     text-transform: uppercase;
     text-align: center;
 }
+.sec-title::after{
+    content:'';
+    background-color:var(--checked);
+    display:block;
+    width: 60px;
+    height: 4px;
+    margin: 40px auto 0;
+}
 .sect-services .sec-title{
-    margin: 0 auto 112px;
+    margin: 0 auto 68px;
 }
 .sect-services-list{
     display:flex;
@@ -91,7 +112,7 @@ ul, p, h2, h4,h5, input, button, img{
     padding:68px 0 0;
 }
 .sect-team .sec-title{
-    margin:0 auto 85px;
+    margin:0 auto 45px;
 }
 .sect-team-list{
     display:flex;
